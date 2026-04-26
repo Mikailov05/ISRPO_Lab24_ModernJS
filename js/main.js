@@ -137,7 +137,7 @@ function printUser({ name, age, city }) {
 // console.log("Остальные числа:", rest);
 
 */
-
+/*
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 
@@ -152,4 +152,18 @@ console.log(findMax(10, 20, 30, 40, 50));
 const objA = { a: 1, b: 2 };
 const objB = { c: 3, d: 4 };
 const merged = {...objA, ...objB };
-console.log("Объединённый объект:", merged);
+console.log("Объединённый объект:", merged);*/
+/*
+import { greet, add, PI } from "./utils.js";
+
+console.log("Модули");
+console.log(greet("Алексей"));
+console.log("5 + 3 =", add(5, 3));
+console.log("Значение PI:", PI);
+
+import { multiply as умножить } from "./utils.js";
+console.log("4 * 7 =", умножить(4, 7));
+
+import * as Utils from "./utils.js";
+console.log(Utils.greet("Мария"));
+console.log("Умножение:", Utils.multiply(3, 9));*/
