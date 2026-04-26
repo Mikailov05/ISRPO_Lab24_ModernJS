@@ -391,7 +391,7 @@ processOrder();
 */
 
 
-
+/*
 
 async function getUsers() {
     try {
@@ -449,4 +449,145 @@ async function createPost() {
     }
 }
 
-createPost();
+createPost();*/
+
+/*
+
+console.log("Optional Chaining");
+
+const user1 = {
+    name: "Андрей",
+    address: {
+        city: "Волжский",
+        street: "Пушкина",
+    },
+};
+
+const user2 = {
+    name: "Дмитрий",
+};
+
+const city1 = user2.address && user2.address.city;
+console.log("Город (старый способ):", city1);
+
+const city2 = user2.address ? .city;
+console.log("Город (новый способ):", city2);
+
+const street = user1.address ? .street;
+console.log("Улица:", street);
+
+const admin = {
+    name: "Администратор",
+    permissions: {
+        canDelete: () => true,
+    },
+};
+
+const guest = {
+    name: "Гость",
+};
+
+console.log("Админ может удалять?", admin.permissions ? .canDelete ? .());
+console.log("Гость может удалять?", guest.permissions ? .canDelete ? .());
+
+const company = {
+    name: "Tech Corp",
+    employees: [
+        { name: "Надежда", role: "Developer" },
+        { name: "Анна", role: "Designer" }
+    ]
+};
+
+const startup = {
+    name: "New Startup",
+};
+
+console.log("Первый сотрудник:", company.employees ? .[0] ? .name);
+console.log("Первый сотрудник стартапа:", startup.employees ? .[0] ? .name);
+
+console.log("Nullish Coalescing");
+
+const value1 = 0;
+const value2 = "";
+const value3 = false;
+const value4 = null;
+const value5 = undefined;
+
+console.log('value1 ?? "default":', value1 ? ? "default");
+console.log('value2 ?? "default":', value2 ? ? "default");
+console.log('value3 ?? "default":', value3 ? ? "default");
+console.log('value4 ?? "default":', value4 ? ? "default");
+console.log('value5 ?? "default":', value5 ? ? "default");
+
+function displayUserSettings(settings) {
+    const theme = settings ? .theme ? ? "light";
+    const fontSize = settings ? .fontSize ? ? 14;
+    const notifications = settings ? .notifications ? ? true;
+
+    console.log("Настройки пользователя:");
+    console.log("Тема:", theme);
+    console.log("Размер шрифта:", fontSize);
+    console.log("Уведомления:", notifications);
+}
+
+displayUserSettings({ theme: "dark", fontSize: 16 });
+displayUserSettings({ notifications: false });
+displayUserSettings({});
+
+const apiResponse = {
+    data: {
+        user: {
+            profile: {
+                settings: {
+                    language: "ru",
+                },
+            },
+        },
+    },
+};
+
+const language = apiResponse ? .data ? .user ? .profile ? .settings ? .language ? ? "en";
+console.log("Язык:", language);
+
+const emptyResponse = {};
+const defaultLanguage = emptyResponse ? .data ? .user ? .profile ? .settings ? .language ? ? "en";
+console.log("Язык по умолчанию:", defaultLanguage);*/
+
+
+
+
+/*
+
+const order = {
+    customer: {
+        name: "Анна",
+        email: "anna@example.com"
+    },
+    shipping: {
+        address: "ул. Ленина, д. 10",
+        city: "Москва"
+    },
+    payment: {
+        method: "card",
+        status: "paid"
+    }
+};
+
+function displayOrder(order) {
+    const name = order ? .customer ? .name ? ? "Не указано";
+    const email = order ? .customer ? .email ? ? "Не указан";
+    const address = order ? .shipping ? .address ? ? "Не указан";
+    const city = order ? .shipping ? .city ? ? "Не указан";
+    const method = order ? .payment ? .method ? ? "Не указан";
+    const status = order ? .payment ? .status ? ? "Не указан";
+
+    console.log("Заказ:");
+    console.log(`Клиент: ${name} (${email})`);
+    console.log(`Доставка: ${city}, ${address}`);
+    console.log(`Оплата: ${method} - ${status}`);
+}
+
+displayOrder(order);
+}
+
+displayOrder(order);*/
